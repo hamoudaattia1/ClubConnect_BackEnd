@@ -18,7 +18,7 @@ import java.time.LocalTime;
 public class Interview implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int idI;
+    Integer idI;
     LocalDateTime interviewDate;
     String candidateName;
     String candidateEmail;
