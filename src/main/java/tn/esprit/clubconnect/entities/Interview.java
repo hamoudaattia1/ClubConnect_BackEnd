@@ -26,4 +26,12 @@ public class Interview implements Serializable {
     @ManyToOne
     Department department;
 
-}
+    // Getter method for the ID field
+    public Integer getId() {
+        return idI;
+    }
+
+    // Setter method for the ID field
+    public void setId(Integer id) {
+        this.idI = id;
+    }}
