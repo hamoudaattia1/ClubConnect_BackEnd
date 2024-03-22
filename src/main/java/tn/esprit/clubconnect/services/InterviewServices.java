@@ -9,7 +9,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Service
-public class InterviewService implements IInterviewService {
+public class InterviewServices implements IInterviewServices {
 
     InterviewRepository interviewRepository;
 

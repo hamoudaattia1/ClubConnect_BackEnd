@@ -4,7 +4,7 @@ import tn.esprit.clubconnect.entities.Interview;
 
 import java.util.List;
 
-public interface IInterviewService {
+public interface IInterviewServices {
     Interview addInterview(Interview interview);
 
     Interview updateInterview(Interview interview);

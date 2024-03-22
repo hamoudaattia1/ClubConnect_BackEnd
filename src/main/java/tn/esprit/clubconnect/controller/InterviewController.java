@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.clubconnect.entities.Interview;
-import tn.esprit.clubconnect.services.IInterviewService;
+import tn.esprit.clubconnect.services.IInterviewServices;
 
 import java.util.List;
 
@@ -12,10 +12,10 @@ import java.util.List;
 @RequestMapping("/Interviews")
 public class InterviewController {
 
-    private final IInterviewService interviewService;
+    private final IInterviewServices interviewService;
 
     @Autowired
-    public InterviewController(IInterviewService interviewService) {
+    public InterviewController(IInterviewServices interviewService) {
         this.interviewService = interviewService;
     }
 
