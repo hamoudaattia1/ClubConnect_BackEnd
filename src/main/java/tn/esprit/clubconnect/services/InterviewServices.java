@@ -1,10 +1,12 @@
-// InterviewService.java
 package tn.esprit.clubconnect.services;
+
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 import tn.esprit.clubconnect.entities.Interview;
 import tn.esprit.clubconnect.repositories.InterviewRepository;
 
+import java.io.IOException;
 import java.util.List;
 
 @AllArgsConstructor
@@ -14,7 +16,7 @@ public class InterviewServices implements IInterviewServices {
     InterviewRepository interviewRepository;
 
     @Override
-    public Interview addInterview(Interview interview) {
+    public Interview addInterviewWithImage(Interview interview) {
         return interviewRepository.save(interview);
     }
 
@@ -37,4 +39,12 @@ public class InterviewServices implements IInterviewServices {
     public List<Interview> getAllInterviews() {
         return interviewRepository.findAll();
     }
+
+    @Override
+    public void exportInterviewsToExcel(String filePath) {
+        List<Interview> interviews = interviewRepository.findAll();
+        // Logic to export interviews to Excel
+    }
+
+
 }

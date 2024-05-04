@@ -25,8 +25,6 @@ public class Department implements Serializable {
     @ManyToOne
     Club club;
 
-    @OneToMany(mappedBy = "department")
-    Set<Interview> interviews;
 
 
 }
