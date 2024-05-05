@@ -25,6 +25,9 @@ public class Registration implements Serializable {
     private String studentName;
 
     @Column(nullable = false, length = 100)
+    private String studentLastName;
+
+    @Column(nullable = false, length = 100)
     private String studentEmail;
 
     @Column(nullable = false, length = 20)
@@ -33,16 +36,10 @@ public class Registration implements Serializable {
     @Column(nullable = false, length = 255)
     private String studentAddress;
 
-//    // Getter method for the ID field
-//    public Integer getId() {
-//        return idR;
-//    }
-//
-//    // Setter method for the ID field
-//    public void setId(Integer id) {
-//        this.idR = id;
-//    }
+    @Column(nullable = false, length = 255)
+    private String studentSkills;
 
-//    @ManyToMany(mappedBy = "registrations")
-//    private List<Interview> interviews = new ArrayList<>();
+    @Column(nullable = false, length = 255)
+    private String studentMotivation;
+
 }
